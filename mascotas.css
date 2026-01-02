@@ -1,115 +1,26 @@
-.navegacion{
-    padding: 10px;
-    justify-content: space-evenly;
-    list-style: none;
-    display: flex;
-    margin: auto;
-    color: rgb(73, 73, 73);
- }
-.navegacion a{
-    text-decoration: none;
-    color:rgb(73, 73, 73);
-    display: inline-block;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: 1px solid #494949;
-    transition: 2s;
-
-}
-
-.navegacion a:hover{
-    background-color: #BBC863;
-}
-
-.cabecero{
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(40, 39, 39);
-}
-.cabecero2{
-    text-align: center;
-    color: rgb(40, 39, 39);
- }
-
-.icon{
-    height: 150px;
-    position: absolute;
-    top: 4px;
-    left: 70px;
-
-}
-
-.icon2{
-    height: 150px;
-    position: absolute;
-    top: 6px;
-    right: 70px;
-}
-.fondo{
-    min-height: 70%;
-    width: 100%;
-
-}
-
-
-.galeria_contenedor{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    height: auto;
-    margin: 30px auto;
-    padding: 0 10px;
-    max-width: 1200px;
-    justify-items: center;
-}
-
-.galeria_contenedor > div {
-   
-    width: 100%; 
-    max-width: 350px;
-}
-
 .galeria_contenedor img {
-   
-    max-width: 100%;
-    height: 200px; 
-    object-fit: cover;
-    border:10px solid #494949;
-    box-shadow: 5px 5px 10px #494949;
-    margin: 0;
-}
+    margin: 0 10px;
+    height: 250px;
+    object-fit: cover;
+    border:10px solid #494949;
+    box-shadow: 5px 5px 10px #494949;
+   
+margin: 0 10px;
+height: 250px;
+object-fit: cover;
+border:10px solid #494949;
+box-shadow: 5px 5px 10px #494949;
 
+    max-width: 100%;
+    height: auto; 
+}
 
 .galeria_contenedor article {
     max-width: 100%;
-    margin: 0;
 }
-
-
-@media screen and (min-width: 601px) and (max-width: 900px) {
-    
-    .galeria_contenedor {
-        grid-template-columns: repeat(2, 1fr);
-        margin: 20px auto;
-        max-width: 850px;
-        gap: 15px;
-    }
-
-    .navegacion {
-        justify-content: space-around;
-        flex-wrap: wrap; 
-    }
-
-    .galeria_contenedor img {
-        height: 200px;
-    }
-}
-
-
 
 @media screen and (max-width: 600px) {
+
 
     .navegacion {
         flex-direction: column;
@@ -117,7 +28,7 @@
     }
 
     .navegacion li {
-        margin-bottom: 5px;
+        margin-bottom: 5px; 
     }
 
     .navegacion a {
@@ -126,36 +37,96 @@
         text-align: center;
     }
 
+
     .icon, .icon2 {
         display: none;
     }
 
-   
+
     .galeria_contenedor {
         display: flex;
-        flex-direction: column; 
-        height: auto;
+        flex-direction: column;
+        height: auto; 
         align-items: center;
         margin-left: 0;
         margin-right: 0;
-        gap: 0; 
-    }
-    
-    .galeria_contenedor > div {
-        width: 95%;
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 
-    
-    .galeria_contenedor article {
-        width: 100%;
-        margin: 10px 0;
+
+    .galeria_contenedor > div {
+        width: 90%;
     }
 
     .galeria_contenedor img {
         width: 100%; 
-        height: auto; 
         margin: 0;
     }
+
+}
+
+
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+
+    .galeria_contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto; 
+        margin: 20px auto;
+        max-width: 850px;
+    }
+
+    .galeria_contenedor > div {
+        margin: 0;
+    }
+
+
+    .navegacion {
+        justify-content: space-around;
+        flex-wrap: wrap; 
+    }
+
+
+    .galeria_contenedor img {
+        width: 90%; 
+        height: auto;
+    }
+}
+
+
+
+@media screen and (min-width: 901px) {
+
+@@ -96,24 +96,31 @@
+    .galeria_contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; 
+        height: auto;
+        margin: 30px auto;
+        max-width: 1200px;
+    }
+
+    .galeria_contenedor > div {
+        margin: 0;
+    }
+
+
+    .galeria_contenedor img {
+        width: 100%;
+        height: 200px; 
+    }
+}
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+article{
+padding: 10px;
+border: 7px solid #555;
+text-align: center;
+margin: 20px;
+background-color: beige;
 }
