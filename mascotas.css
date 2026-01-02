@@ -1,10 +1,10 @@
 .galeria_contenedor img {
-    margin: 0 10px;
-    height: 250px;
-    object-fit: cover;
-    border:10px solid #494949;
-    box-shadow: 5px 5px 10px #494949;
-   
+margin: 0 10px;
+height: 250px;
+object-fit: cover;
+border:10px solid #494949;
+box-shadow: 5px 5px 10px #494949;
+
     max-width: 100%;
     height: auto; 
 }
@@ -117,3 +117,10 @@ section{
     padding-bottom: 50px;
 }
 
+article{
+padding: 10px;
+border: 7px solid #555;
+text-align: center;
+margin: 20px;
+background-color: beige;
+}
